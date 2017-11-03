@@ -1,0 +1,4 @@
+F:\dotnetProject\PIDDemo\PIDSample\bin\Debug\PIDSample.dll
+F:\dotnetProject\PIDDemo\PIDSample\bin\Debug\PIDSample.pdb
+F:\dotnetProject\PIDDemo\PIDSample\obj\Debug\PIDSample.dll
+F:\dotnetProject\PIDDemo\PIDSample\obj\Debug\PIDSample.pdb

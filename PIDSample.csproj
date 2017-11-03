@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8C450C4-C375-4510-9EDC-7E843F2CC30E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PIDSample</RootNamespace>
+    <AssemblyName>PIDSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\CollectionBase.cs" />
+    <Compile Include="Collections\ComplexRadioCollection.cs" />
+    <Compile Include="Collections\FeedCollection.cs" />
+    <Compile Include="Collections\FurnaceCollection.cs" />
+    <Compile Include="Collections\RadioCollection.cs" />
+    <Compile Include="Collections\SplitRangingCollection.cs" />
+    <Compile Include="Collections\SwitchCollection.cs" />
+    <Compile Include="Controllers\CascadeController.cs" />
+    <Compile Include="Collections\CascadePIDCollection.cs" />
+    <Compile Include="Controllers\ComplexRadioController.cs" />
+    <Compile Include="Controllers\FeedController.cs" />
+    <Compile Include="Controllers\FurnaceController.cs" />
+    <Compile Include="Controllers\RadioController.cs" />
+    <Compile Include="Controllers\SplitRangingController.cs" />
+    <Compile Include="Controllers\SwitchController.cs" />
+    <Compile Include="CustomizeException.cs" />
+    <Compile Include="Models\CascadePIDModel.cs" />
+    <Compile Include="Controllers\ControllerFactory.cs" />
+    <Compile Include="Controllers\ControllerType.cs" />
+    <Compile Include="Controllers\ControllerBase.cs" />
+    <Compile Include="Controllers\MultiCascadeController.cs" />
+    <Compile Include="Models\DynamicObject.cs" />
+    <Compile Include="Models\FeedModel.cs" />
+    <Compile Include="Models\FurnaceModel.cs" />
+    <Compile Include="Models\MultiCascadeModel.cs" />
+    <Compile Include="Collections\MultiCascadePIDCollection.cs" />
+    <Compile Include="Models\ComplexRadioModel.cs" />
+    <Compile Include="Models\RadioModel.cs" />
+    <Compile Include="Models\SplitRangingModel.cs" />
+    <Compile Include="Models\SwitchModel.cs" />
+    <Compile Include="PIDConstant.cs" />
+    <Compile Include="Collections\PIDCollection.cs" />
+    <Compile Include="Models\PIDModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\SingleController.cs" />
+    <Compile Include="Tester.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
